@@ -151,4 +151,6 @@
     <string name="aries_defectos">" He does not like to wait. The Aries can not bear to fail or be wrong, and do not accept with good pleasure the advice of others. Nor do tyrants admit. They can be selfish and have genius. The Aries are impulsive and sometimes have little patience. They tend to take too many risks."</string>
     <string name="virgo_defectos">Conservative and perfectionist, a Virgo tends to worry too much and his hard side can lead him to be overly critical and hard on others. Virgo does not like dirt, disorder, danger, vague people, uncertainty.</string>
     <string name="pnl12">The challenge of my life was no other than discovering how far I could go by doing what I liked.</string>
+    <string name="prefijo_idioma">en</string>
+    <string name="title_activity_splash">SplashActivity</string>
 </resources>
