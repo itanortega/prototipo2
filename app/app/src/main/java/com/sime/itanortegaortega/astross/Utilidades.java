@@ -1,16 +1,65 @@
 package com.sime.itanortegaortega.astross;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+import java.util.TimeZone;
 
 /**
  * Created by itanortegaortega on 18/04/18.
  */
 
 public class Utilidades {
+
+    public static String obtenerFecha() {
+        Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("GMT-05:00"), new Locale("es", "Colombia"));
+        SimpleDateFormat DAT=new SimpleDateFormat("yyyy-MM-dd");
+        return DAT.format(calendar.getTime());
+    }
+
+    public static boolean escribirArchivo(String texto, String ruta){
+        FileWriter fichero = null;
+        PrintWriter pw = null;
+
+        try {
+            fichero = new FileWriter(ruta);
+            pw = new PrintWriter(fichero);
+            pw.println(texto);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            try {
+                if (null != fichero)
+                    fichero.close();
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+        return true;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     public static void redireccionar(AppCompatActivity act, MenuItem item, int i) {
         Intent intent;
