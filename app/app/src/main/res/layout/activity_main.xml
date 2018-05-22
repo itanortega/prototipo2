@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sime.itanortegaortega.astross.MainActivity"
+    android:padding="2dp"
+    android:background="@drawable/fndam">
+
+    <LinearLayout
+        android:id="@+id/imgCentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        android:orientation="vertical"
+        android:onClick="toSigno">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/tauro"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/ImgVCentral"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aries"
+            android:textColor="@color/colorBlanco"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/Txt_Nombre_Signo"
+            style="@style/nom1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlanco"
+            android:text="@string/aries_f"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/Txt_Fechas"
+            style="@style/fec1"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/circulofnd"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintBottom_toBottomOf = "parent"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="345"
+        android:id="@+id/L_Aries">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/aries"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setAries"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="15"
+        android:id="@+id/L_Tauro">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/tauro"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setTauro"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="45"
+        android:id="@+id/L_Geminis">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/geminis"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setGeminis"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="75"
+        android:id="@+id/L_Cancer">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/cancer"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setCancer"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="105"
+        android:id="@+id/L_Leo">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/leo"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setLeo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="135"
+        android:id="@+id/L_Virgo">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/virgo"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setVirgo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="165"
+        android:id="@+id/L_Libra">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/libra"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setLibra"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="195"
+        android:id="@+id/L_Escorpio">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/escorpio"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setEscorpio"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="225"
+        android:id="@+id/L_Sagitario">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/sagitario"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setSagitario"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="255"
+        android:id="@+id/L_Capricornio">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/capricornio"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setCapricornio"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="285"
+        android:id="@+id/L_Acuario">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/acuario"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setAcuario"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintCircle="@id/imgCentral"
+        app:layout_constraintCircleRadius="@dimen/radio"
+        app:layout_constraintCircleAngle="315"
+        android:id="@+id/L_Piscis">
+        <ImageView
+            android:layout_width="@dimen/hw"
+            android:layout_height="@dimen/hw"
+            android:src="@drawable/piscis"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setPiscis"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

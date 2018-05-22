@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sime.itanortegaortega.astross.CompatibilidadActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/fnd">
+            <ImageView
+                android:id="@+id/ImgBanner"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/aries"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="18dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp">
+                <TextView
+                    android:id="@+id/Txt_Nombre_Signo_Banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aries"
+                    style="@style/tit1"/>
+                <TextView
+                    android:id="@+id/Txt_Fechas_Banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aries_f"
+                    style="@style/tit2"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/imgCentral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintLeft_toLeftOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintRight_toRightOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/Txt_Signo1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compatibilidadpor"
+                    android:textSize="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/Txt_Porcentaje"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/Txt_Signo2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="345">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/aries"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setAries"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="15">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/tauro"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setTauro"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="45">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/geminis"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setGeminis"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="75">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/cancer"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setCancer"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="105">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/leo"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setLeo"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="135">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/virgo"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setVirgo"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="165">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/libra"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setLibra"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="195">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/escorpio"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setEscorpio"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="225">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/sagitario"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setSagitario"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="255">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/capricornio"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setCapricornio"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="285">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/acuario"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setAcuario"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintCircle="@id/imgCentral"
+                app:layout_constraintCircleRadius="@dimen/radioc"
+                app:layout_constraintCircleAngle="315">
+                <ImageView
+                    android:layout_width="@dimen/hw"
+                    android:layout_height="@dimen/hw"
+                    android:src="@drawable/piscis"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="setPiscis"/>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

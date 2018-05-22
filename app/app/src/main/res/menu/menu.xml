@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/iteDiario" android:title="@string/sdiario"/>
+    <item android:id="@+id/iteComp" android:title="@string/scomp"/>
+    <item android:id="@+id/iteNum" android:title="@string/snum"/>
+    <item android:id="@+id/iteFon" android:title="@string/sfondos"/>
+    <item android:id="@+id/itePNL" android:title="@string/spnl"/>
+    <item android:id="@+id/iteAbout" android:title="@string/about"/>
+</menu>
