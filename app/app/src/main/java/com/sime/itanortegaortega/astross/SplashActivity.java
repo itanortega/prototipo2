@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
     private final static String DOMAIN = "http://181.62.161.249:41062/www/astross/";
     private static String LOCAL = "";
     //private static String HOY = Utilidades.obtenerFecha();
-    private static String HOY = "2018-05-18";
+    private static String HOY = "2018-05-21";
 
 
     ProgressBar Pb_Estado;
@@ -177,7 +177,7 @@ public class SplashActivity extends AppCompatActivity {
                             data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "api.php?get=" + nombre.substring(0, nombre.length()-5)));
                             data.writeToFile(LOCAL + nombre, true);
                             contador ++;
-                            publishProgress(Integer.parseInt(String.valueOf(98*contador/cantidad))+1);
+                            publishProgress(Integer.parseInt(String.valueOf(90*contador/cantidad))+1);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         } catch (MalformedURLException e) {
@@ -192,7 +192,7 @@ public class SplashActivity extends AppCompatActivity {
                             data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "imgs/" + nombre));
                             data.writeToFile(LOCAL + nombre, true);
                             contador ++;
-                            publishProgress(Integer.parseInt(String.valueOf(98*contador/cantidad))+1);
+                            publishProgress(Integer.parseInt(String.valueOf(90*contador/cantidad))+1);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         } catch (MalformedURLException e) {
@@ -204,7 +204,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }
 
-            publishProgress(98);
+            publishProgress(99);
             return true;
         }
 
@@ -278,16 +278,15 @@ public class SplashActivity extends AppCompatActivity {
             }else{
                 CAFData fechalocal = CAFData.dataWithContentsOfFile(LOCAL + "fecha.dat");
 
-
-                if(!fechalocal.toString().equals(HOY)){ Log.d("debugapp", "descarga");
+                if(!fechalocal.toText().toString().equals(HOY)){
                     try {
                         CAFData horoscopoDiarioData = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "api.php?get=" + HOY));
                         horoscopoDiarioData.writeToFile(LOCAL + "horoscopo.json", true);
+                        boolean estadoEscritura = Utilidades.escribirArchivo(HOY, LOCAL + "fecha.dat");
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
                 }
-                boolean estadoEscritura = Utilidades.escribirArchivo(HOY, LOCAL + "fecha.dat");
             }
 
             publishProgress(100);
@@ -302,14 +301,7 @@ public class SplashActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Boolean aBoolean) {
-            super.onPostExecute(aBoolean);
-
-            try {
-                Thread.sleep(50);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-Log.d("debugapp", "hola");
+            Pb_Estado.setProgress(100);
             Intent intent = new Intent(getBaseContext(), MainActivity.class);
             startActivity(intent);
             finish();
