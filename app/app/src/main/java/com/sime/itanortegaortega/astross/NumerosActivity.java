@@ -5,8 +5,13 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class NumerosActivity extends AppCompatActivity {
     private static String LOCAL = "";
@@ -62,14 +67,21 @@ public class NumerosActivity extends AppCompatActivity {
         img_baloto = (ImageView) this.findViewById(R.id.img_baloto);
         img_baloto.setImageBitmap(Utilidades.get_imagen_signo(this, 18, LOCAL));
 
-
-        String numeros = String.valueOf((int) (Math.random() * 5)+1) + ", " + String.valueOf((int) (Math.random() * 8)+6) +" y " + String.valueOf((int) (Math.random() * 9)+7);
-        String chance = String.valueOf((int) (Math.random() * 9999)+1000);
-        String baloto = String.valueOf((int) (Math.random() * 999999)+100000);
-
-        Txt_Numeros.setText(numeros);
-        Txt_Chance.setText(chance);
-        Txt_Baloto.setText(baloto);
+        CAFData data = CAFData.dataWithContentsOfFile(LOCAL + "/horoscopo.json");
+        if(data != null){
+            try {
+                JSONObject horoscoporoot = new JSONObject(data.toText());
+                JSONArray horoscopo = horoscoporoot.getJSONArray("horoscopo");
+                JSONObject datos_horoscopo = horoscopo.getJSONObject(id-1);
+                String numeros = datos_horoscopo.getString("num").toString();
+                String[] textos = numeros.split(";");
+                Txt_Numeros.setText(textos[0]);
+                Txt_Chance.setText(textos[1]);
+                Txt_Baloto.setText(textos[2]);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void showToolbar(String title, boolean upButton){

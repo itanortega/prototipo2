@@ -187,7 +187,8 @@ public class SplashActivity extends AppCompatActivity {
                     for (int i = 0; i < imagenesL.length(); i++) {
                         try {
                             JSONObject archivo = imagenesL.getJSONObject(i);
-                            String nombre = archivo.getString("archivo").toString(); Log.d("debugapp", DOMAIN + "imgs/" + nombre);
+                            String nombre = archivo.getString("archivo").toString();
+                            //Log.d("debugapp", DOMAIN + "imgs/" + nombre);
                             data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "imgs/" + nombre));
                             data.writeToFile(LOCAL + nombre, true);
                             contador ++;
