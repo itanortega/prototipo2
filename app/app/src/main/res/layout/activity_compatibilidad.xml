@@ -24,7 +24,6 @@
                 android:id="@+id/ImgBanner"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/aries"
                 android:layout_marginTop="18dp"
                 android:layout_marginLeft="18dp"/>
             <LinearLayout
@@ -94,7 +93,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/aries"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setAries"/>
             </LinearLayout>
@@ -108,7 +106,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/tauro"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setTauro"/>
             </LinearLayout>
@@ -122,7 +119,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/geminis"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setGeminis"/>
             </LinearLayout>
@@ -136,7 +132,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/cancer"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setCancer"/>
             </LinearLayout>
@@ -150,7 +145,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/leo"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setLeo"/>
             </LinearLayout>
@@ -164,7 +158,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/virgo"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setVirgo"/>
             </LinearLayout>
@@ -178,7 +171,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/libra"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setLibra"/>
             </LinearLayout>
@@ -192,7 +184,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/escorpio"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setEscorpio"/>
             </LinearLayout>
@@ -206,7 +197,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/sagitario"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setSagitario"/>
             </LinearLayout>
@@ -220,7 +210,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/capricornio"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setCapricornio"/>
             </LinearLayout>
@@ -234,7 +223,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/acuario"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setAcuario"/>
             </LinearLayout>
@@ -248,7 +236,6 @@
                 <ImageView
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
-                    android:src="@drawable/piscis"
                     android:layout_gravity="center_horizontal"
                     android:onClick="setPiscis"/>
             </LinearLayout>

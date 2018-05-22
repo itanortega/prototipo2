@@ -152,4 +152,5 @@
     <string name="pnl10">La única cosa que se interpone entre un hombre y lo que quiere de la vida es a menudo simplemente la voluntad de intentarlo y la fe para creer que es posible</string>
     <string name="pnl11">A veces perder es ganar y no encontrar lo que se busca es encontrarse.</string>
     <string name="pnl12">El reto de mi vida no era otro que descubrir hasta donde podía llegar haciendo lo que me gustaba.</string>
+    <string name="title_activity_splash">SplashActivity</string>
 </resources>

@@ -30,7 +30,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/aries"/>
+                    android:id="@+id/signo_itan"/>
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/acuario"/>
+                    android:id="@+id/signo_sonia"/>
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
@@ -96,14 +96,13 @@
                     android:layout_width="187dp"
                     android:layout_height="96dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/escudo" />
+                    android:id="@+id/img_cesmag"/>
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/img_caldas"
                     android:layout_width="171dp"
                     android:layout_height="96dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/caldas" />
+                    android:layout_weight="1"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

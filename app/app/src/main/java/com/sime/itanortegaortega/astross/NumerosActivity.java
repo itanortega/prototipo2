@@ -21,6 +21,12 @@ public class NumerosActivity extends AppCompatActivity {
     TextView Txt_Chance = null;
     TextView Txt_Baloto = null;
 
+
+    ImageView img_num = null;
+    ImageView img_chance = null;
+    ImageView img_baloto = null;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +50,17 @@ public class NumerosActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
+        ImgBanner.setImageBitmap(Utilidades.get_imagen_signo(this, id, LOCAL));
+
+
+        img_num = (ImageView) this.findViewById(R.id.img_num);
+        img_num.setImageBitmap(Utilidades.get_imagen_signo(this, 16, LOCAL));
+
+        img_chance = (ImageView) this.findViewById(R.id.img_chance);
+        img_chance.setImageBitmap(Utilidades.get_imagen_signo(this, 17, LOCAL));
+
+        img_baloto = (ImageView) this.findViewById(R.id.img_baloto);
+        img_baloto.setImageBitmap(Utilidades.get_imagen_signo(this, 18, LOCAL));
 
 
         String numeros = String.valueOf((int) (Math.random() * 5)+1) + ", " + String.valueOf((int) (Math.random() * 8)+6) +" y " + String.valueOf((int) (Math.random() * 9)+7);

@@ -40,7 +40,7 @@ public class PnlActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
+        ImgBanner.setImageBitmap(Utilidades.get_imagen_signo(this, id, LOCAL));
 
 
         Txt_frase1 = (TextView) this.findViewById(R.id.Txt_frase1);

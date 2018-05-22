@@ -24,7 +24,6 @@
                 android:id="@+id/ImgBanner"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/aries"
                 android:layout_marginTop="18dp"
                 android:layout_marginLeft="18dp"/>
             <LinearLayout
@@ -57,7 +56,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/num"/>
+                android:id="@+id/img_num"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +82,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/chance"/>
+                android:id="@+id/img_chance"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,7 +108,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/baloto"/>
+                android:id="@+id/img_baloto"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

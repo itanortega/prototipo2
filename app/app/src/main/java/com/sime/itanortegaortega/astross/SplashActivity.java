@@ -68,7 +68,7 @@ public class SplashActivity extends AppCompatActivity {
             CAFData data = CAFData.dataWithContentsOfFile(urlLocal);
             if(data != null){
                 existe = true;
-                for(int i=1; i<=98; i++){
+                for(int i=1; i<=90; i++){
                     try {
                         Thread.sleep(30);
                     } catch (InterruptedException e) {
@@ -187,7 +187,7 @@ public class SplashActivity extends AppCompatActivity {
                     for (int i = 0; i < imagenesL.length(); i++) {
                         try {
                             JSONObject archivo = imagenesL.getJSONObject(i);
-                            String nombre = archivo.getString("archivo").toString();
+                            String nombre = archivo.getString("archivo").toString(); Log.d("debugapp", DOMAIN + "imgs/" + nombre);
                             data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "imgs/" + nombre));
                             data.writeToFile(LOCAL + nombre, true);
                             contador ++;
@@ -203,7 +203,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }
 
-            publishProgress(99);
+            publishProgress(90);
             return true;
         }
 

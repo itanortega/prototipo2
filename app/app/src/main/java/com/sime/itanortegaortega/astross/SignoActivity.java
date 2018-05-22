@@ -74,7 +74,7 @@ public class SignoActivity extends AppCompatActivity {
     private void cambiarDatos() {
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
+        ImgBanner.setImageBitmap(Utilidades.get_imagen_signo(this, id, LOCAL));
 
         Txt_Elemento_Signo.setText(Utilidades.get_elemento(this, id));
         Txt_Descripcion_Signo.setText(Utilidades.get_descripcion(this, id));

@@ -40,8 +40,8 @@ public class FondosActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
-        Img_Fondo.setImageDrawable((Drawable) Utilidades.get_imagen_fondo(this, id));
+        ImgBanner.setImageBitmap(Utilidades.get_imagen_signo(this, id, LOCAL));
+        Img_Fondo.setImageBitmap(Utilidades.get_imagen_fondo(this, id, LOCAL));
     }
 
     public void showToolbar(String title, boolean upButton){

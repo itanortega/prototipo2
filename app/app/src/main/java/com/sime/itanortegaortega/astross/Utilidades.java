@@ -3,6 +3,7 @@ package com.sime.itanortegaortega.astross;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -196,69 +197,160 @@ public class Utilidades {
         return res;
     }
 
-    public static Drawable get_imagen_signo(Activity act, int id, String localpath) {
+    public static Bitmap get_imagen_signo(Activity act, int id, String localpath) {
 
-        Drawable res = act.getResources().getDrawable(R.drawable.aries);;
+        Bitmap respuesta = null;
+        String res = "";
         switch (id){
             case 1:
-                res =  act.getResources().getDrawable(R.drawable.aries);
+                res =  "aries";
                 break;
 
             case 2:
-                res =  act.getResources().getDrawable(R.drawable.tauro);
+                res =  "tauro";
                 break;
 
             case 3:
-                res =  act.getResources().getDrawable(R.drawable.geminis);
+                res =  "geminis";
                 break;
 
             case 4:
-                res =  act.getResources().getDrawable(R.drawable.cancer);
+                res =  "cancer";
                 break;
 
             case 5:
-                res =  act.getResources().getDrawable(R.drawable.leo);
+                res =  "leo";
                 break;
 
             case 6:
-                res =  act.getResources().getDrawable(R.drawable.virgo);
+                res =  "virgo";
                 break;
 
             case 7:
-                res =  act.getResources().getDrawable(R.drawable.libra);
+                res =  "libra";
                 break;
 
             case 8:
-                res =  act.getResources().getDrawable(R.drawable.escorpio);
+                res =  "escorpio";
                 break;
 
             case 9:
-                res =  act.getResources().getDrawable(R.drawable.sagitario);
+                res =  "sagitario";
                 break;
 
             case 10:
-                res =  act.getResources().getDrawable(R.drawable.capricornio);
+                res =  "capricornio";
                 break;
 
             case 11:
-                res =  act.getResources().getDrawable(R.drawable.acuario);
+                res =  "acuario";
                 break;
 
             case 12:
-                res =  act.getResources().getDrawable(R.drawable.piscis);
+                res =  "piscis";
+                break;
+
+            case 13:
+                res =  "iucesmag";
+                break;
+
+            case 14:
+                res =  "caldas";
+                break;
+
+            case 15:
+                res =  "circulofnd";
+                break;
+
+            case 16:
+                res =  "num";
+                break;
+
+            case 17:
+                res =  "chance";
+                break;
+
+            case 18:
+                res =  "baloto";
                 break;
         }
 
-        /*CAFData data = CAFData.dataWithContentsOfFile(localPath + "/LastPhoto.jpg");
+        CAFData data = CAFData.dataWithContentsOfFile(localpath + "/" + res + ".png");
         if(data != null){
-            Bitmap bitmap = data.toImage();
-            if(bitmap != null){
-                Img_Foto.setImageBitmap(bitmap);
-            }
-        }*/
+            respuesta = data.toImage();
+        }
 
-        return res;
+        return respuesta;
     }
+
+
+
+
+    public static Bitmap get_imagen_fondo(Activity act, int id, String localpath) {
+        Bitmap respuesta = null;
+        String res = "";
+        switch (id){
+            case 1:
+                res =  "aries";
+                break;
+
+            case 2:
+                res =  "tauro";
+                break;
+
+            case 3:
+                res =  "geminis";
+                break;
+
+            case 4:
+                res =  "cancer";
+                break;
+
+            case 5:
+                res =  "leo";
+                break;
+
+            case 6:
+                res =  "virgo";
+                break;
+
+            case 7:
+                res =  "libra";
+                break;
+
+            case 8:
+                res =  "escorpio";
+                break;
+
+            case 9:
+                res =  "sagitario";
+                break;
+
+            case 10:
+                res =  "capricornio";
+                break;
+
+            case 11:
+                res =  "acuario";
+                break;
+
+            case 12:
+                res =  "piscis";
+                break;
+        }
+
+        CAFData data = CAFData.dataWithContentsOfFile(localpath + "/" + res + "_fondo.png");
+        if(data != null){
+            respuesta = data.toImage();
+        }
+
+        return respuesta;
+    }
+
+
+
+
+
 
 
 
@@ -701,61 +793,6 @@ public class Utilidades {
 
             case 12:
                 res = act.getResources().getString(R.string.pnl12);
-                break;
-        }
-        return res;
-    }
-
-
-    public static Drawable get_imagen_fondo(Activity act, int id) {
-        Drawable res = act.getResources().getDrawable(R.drawable.aries_fondo);;
-        switch (id){
-            case 1:
-                res =  act.getResources().getDrawable(R.drawable.aries_fondo);
-                break;
-
-            case 2:
-                res =  act.getResources().getDrawable(R.drawable.tauro_fondo);
-                break;
-
-            case 3:
-                res =  act.getResources().getDrawable(R.drawable.geminis_fondo);
-                break;
-
-            case 4:
-                res =  act.getResources().getDrawable(R.drawable.cancer_fondo);
-                break;
-
-            case 5:
-                res =  act.getResources().getDrawable(R.drawable.leo_fondo);
-                break;
-
-            case 6:
-                res =  act.getResources().getDrawable(R.drawable.virgo_fondo);
-                break;
-
-            case 7:
-                res =  act.getResources().getDrawable(R.drawable.libra_fondo);
-                break;
-
-            case 8:
-                res =  act.getResources().getDrawable(R.drawable.escorpio_fondo);
-                break;
-
-            case 9:
-                res =  act.getResources().getDrawable(R.drawable.sagitario_fondo);
-                break;
-
-            case 10:
-                res =  act.getResources().getDrawable(R.drawable.capricornio_fondo);
-                break;
-
-            case 11:
-                res =  act.getResources().getDrawable(R.drawable.acuario_fondo);
-                break;
-
-            case 12:
-                res =  act.getResources().getDrawable(R.drawable.piscis_fondo);
                 break;
         }
         return res;
