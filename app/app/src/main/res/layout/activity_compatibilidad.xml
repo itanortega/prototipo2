@@ -74,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/compatibilidadpor"
-                    android:textSize="80dp"
+                    android:textSize="75dp"
                     android:layout_gravity="center_horizontal"
                     android:id="@+id/Txt_Porcentaje"/>
                 <TextView
@@ -94,7 +94,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setAries"/>
+                    android:onClick="setAries"
+                    android:id="@+id/comp_img_aries"/>
             </LinearLayout>
 
             <LinearLayout
@@ -107,7 +108,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setTauro"/>
+                    android:onClick="setTauro"
+                    android:id="@+id/comp_img_tauro"/>
             </LinearLayout>
 
             <LinearLayout
@@ -120,7 +122,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setGeminis"/>
+                    android:onClick="setGeminis"
+                    android:id="@+id/comp_img_geminis"/>
             </LinearLayout>
 
             <LinearLayout
@@ -133,7 +136,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setCancer"/>
+                    android:onClick="setCancer"
+                    android:id="@+id/comp_img_cancer"/>
             </LinearLayout>
 
             <LinearLayout
@@ -146,7 +150,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setLeo"/>
+                    android:onClick="setLeo"
+                    android:id="@+id/comp_img_leo"/>
             </LinearLayout>
 
             <LinearLayout
@@ -159,7 +164,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setVirgo"/>
+                    android:onClick="setVirgo"
+                    android:id="@+id/comp_img_virgo"/>
             </LinearLayout>
 
             <LinearLayout
@@ -172,7 +178,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setLibra"/>
+                    android:onClick="setLibra"
+                    android:id="@+id/comp_img_libra"/>
             </LinearLayout>
 
             <LinearLayout
@@ -185,7 +192,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setEscorpio"/>
+                    android:onClick="setEscorpio"
+                    android:id="@+id/comp_img_escorpio"/>
             </LinearLayout>
 
             <LinearLayout
@@ -198,7 +206,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setSagitario"/>
+                    android:onClick="setSagitario"
+                    android:id="@+id/comp_img_sagitario"/>
             </LinearLayout>
 
             <LinearLayout
@@ -211,7 +220,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setCapricornio"/>
+                    android:onClick="setCapricornio"
+                    android:id="@+id/comp_img_capricornio"/>
             </LinearLayout>
 
             <LinearLayout
@@ -224,7 +234,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setAcuario"/>
+                    android:onClick="setAcuario"
+                    android:id="@+id/comp_img_acuario"/>
             </LinearLayout>
 
             <LinearLayout
@@ -237,7 +248,8 @@
                     android:layout_width="@dimen/hw"
                     android:layout_height="@dimen/hw"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="setPiscis"/>
+                    android:onClick="setPiscis"
+                    android:id="@+id/comp_img_piscis"/>
             </LinearLayout>
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>

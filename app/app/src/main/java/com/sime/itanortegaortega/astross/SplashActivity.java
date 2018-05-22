@@ -68,7 +68,7 @@ public class SplashActivity extends AppCompatActivity {
             CAFData data = CAFData.dataWithContentsOfFile(urlLocal);
             if(data != null){
                 existe = true;
-                for(int i=1; i<=90; i++){
+                for(int i=1; i<=80; i++){
                     try {
                         Thread.sleep(30);
                     } catch (InterruptedException e) {
@@ -176,7 +176,7 @@ public class SplashActivity extends AppCompatActivity {
                             data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "api.php?get=" + nombre.substring(0, nombre.length()-5)));
                             data.writeToFile(LOCAL + nombre, true);
                             contador ++;
-                            publishProgress(Integer.parseInt(String.valueOf(90*contador/cantidad))+1);
+                            publishProgress(Integer.parseInt(String.valueOf(95*contador/cantidad))+1);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         } catch (MalformedURLException e) {
@@ -192,7 +192,7 @@ public class SplashActivity extends AppCompatActivity {
                             data = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "imgs/" + nombre));
                             data.writeToFile(LOCAL + nombre, true);
                             contador ++;
-                            publishProgress(Integer.parseInt(String.valueOf(90*contador/cantidad))+1);
+                            publishProgress(Integer.parseInt(String.valueOf(95*contador/cantidad))+1);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         } catch (MalformedURLException e) {
@@ -204,7 +204,7 @@ public class SplashActivity extends AppCompatActivity {
                 }
             }
 
-            publishProgress(90);
+            publishProgress(98);
             return true;
         }
 
