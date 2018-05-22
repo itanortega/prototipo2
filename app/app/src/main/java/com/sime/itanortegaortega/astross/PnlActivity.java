@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PnlActivity extends AppCompatActivity {
+    private static String LOCAL = "";
 
     SharedPreferences preferencias;
     Toolbar toolbar;
@@ -25,6 +26,8 @@ public class PnlActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pnl);
 
+        LOCAL = getApplicationContext().getFilesDir().getAbsolutePath() + "/";
+
         preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
         id = preferencias.getInt("id", 1);
 
@@ -37,7 +40,7 @@ public class PnlActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
 
 
         Txt_frase1 = (TextView) this.findViewById(R.id.Txt_frase1);

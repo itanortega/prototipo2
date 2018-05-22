@@ -9,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public class AboutActivity extends AppCompatActivity {
+    private static String LOCAL = "";
 
     Toolbar toolbar;
 
@@ -16,6 +17,8 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
+        LOCAL = getApplicationContext().getFilesDir().getAbsolutePath() + "/";
 
         toolbar = (Toolbar) findViewById(R.id.id_tb_toolbar);
         showToolbar(getResources().getString(R.string.about), true);

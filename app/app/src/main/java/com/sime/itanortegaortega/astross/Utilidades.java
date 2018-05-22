@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -49,17 +50,6 @@ public class Utilidades {
         }
         return true;
     }
-
-
-
-
-
-
-
-
-
-
-
 
     public static void redireccionar(AppCompatActivity act, MenuItem item, int i) {
         Intent intent;
@@ -206,7 +196,8 @@ public class Utilidades {
         return res;
     }
 
-    public static Drawable get_imagen_signo(Activity act, int id) {
+    public static Drawable get_imagen_signo(Activity act, int id, String localpath) {
+
         Drawable res = act.getResources().getDrawable(R.drawable.aries);;
         switch (id){
             case 1:
@@ -257,8 +248,31 @@ public class Utilidades {
                 res =  act.getResources().getDrawable(R.drawable.piscis);
                 break;
         }
+
+        /*CAFData data = CAFData.dataWithContentsOfFile(localPath + "/LastPhoto.jpg");
+        if(data != null){
+            Bitmap bitmap = data.toImage();
+            if(bitmap != null){
+                Img_Foto.setImageBitmap(bitmap);
+            }
+        }*/
+
         return res;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public static String get_elemento(Activity act, int id) {
         String res = "";

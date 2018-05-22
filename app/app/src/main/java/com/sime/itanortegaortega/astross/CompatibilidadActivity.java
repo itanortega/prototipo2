@@ -13,6 +13,7 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class CompatibilidadActivity extends AppCompatActivity {
+    private static String LOCAL = "";
 
     SharedPreferences preferencias;
     Toolbar toolbar;
@@ -30,6 +31,8 @@ public class CompatibilidadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compatibilidad);
 
+        LOCAL = getApplicationContext().getFilesDir().getAbsolutePath() + "/";
+
         preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
         id = preferencias.getInt("id", 1);
 
@@ -42,7 +45,7 @@ public class CompatibilidadActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
 
         Txt_Signo1 = (TextView) this.findViewById(R.id.Txt_Signo1);
         Txt_Porcentaje = (TextView) this.findViewById(R.id.Txt_Porcentaje);

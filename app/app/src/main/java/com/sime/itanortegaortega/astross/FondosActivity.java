@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class FondosActivity extends AppCompatActivity {
+    private static String LOCAL = "";
 
     SharedPreferences preferencias;
     Toolbar toolbar;
@@ -24,6 +25,8 @@ public class FondosActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fondos);
 
+        LOCAL = getApplicationContext().getFilesDir().getAbsolutePath() + "/";
+
         preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
         id = preferencias.getInt("id", 1);
 
@@ -37,7 +40,7 @@ public class FondosActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
         Img_Fondo.setImageDrawable((Drawable) Utilidades.get_imagen_fondo(this, id));
     }
 

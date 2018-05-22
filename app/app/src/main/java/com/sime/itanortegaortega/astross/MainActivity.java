@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private static String LOCAL = "";
     SharedPreferences preferencias;
 
     TextView Txt_Nombre_Signo = null;
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        LOCAL = getApplicationContext().getFilesDir().getAbsolutePath() + "/";
+
         Txt_Nombre_Signo = (TextView) this.findViewById(R.id.Txt_Nombre_Signo);
         Txt_Fechas = (TextView) this.findViewById(R.id.Txt_Fechas);
         ImgVCentral = (ImageView) this.findViewById(R.id.ImgVCentral);
@@ -39,10 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
     private int obtenerGrados(int id) {
         int grados = (id-1)*30;
-        /*switch (id){
-            case 1: grados = 0; break;
-            case 2: grados = 30; break;
-        }*/
         return grados;
     }
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo.setText(Utilidades.get_nombre_signo(this, i));
         Txt_Fechas.setText(Utilidades.get_fecha_signo(this, i));
-        ImgVCentral.setImageDrawable((Drawable) Utilidades.get_imagen_signo(this, i));
+        ImgVCentral.setImageDrawable((Drawable) Utilidades.get_imagen_signo(this, i, LOCAL));
     }
 
     public void toSigno(View view) {

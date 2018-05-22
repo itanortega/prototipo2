@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class NumerosActivity extends AppCompatActivity {
+    private static String LOCAL = "";
 
     SharedPreferences preferencias;
     Toolbar toolbar;
@@ -24,6 +25,8 @@ public class NumerosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numeros);
+
+        LOCAL = getApplicationContext().getFilesDir().getAbsolutePath() + "/";
 
         preferencias = getSharedPreferences("MisPreferencias", Context.MODE_PRIVATE);
         id = preferencias.getInt("id", 1);
@@ -41,7 +44,7 @@ public class NumerosActivity extends AppCompatActivity {
 
         Txt_Nombre_Signo_B.setText(Utilidades.get_nombre_signo(this, id));
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
-        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id));
+        ImgBanner.setImageDrawable(Utilidades.get_imagen_signo(this, id, LOCAL));
 
 
         String numeros = String.valueOf((int) (Math.random() * 5)+1) + ", " + String.valueOf((int) (Math.random() * 8)+6) +" y " + String.valueOf((int) (Math.random() * 9)+7);

@@ -27,8 +27,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private final static String DOMAIN = "http://181.62.161.249:41062/www/astross/";
     private static String LOCAL = "";
-    //private static String HOY = Utilidades.obtenerFecha();
-    private static String HOY = "2018-05-21";
+    private static String HOY = Utilidades.obtenerFecha();
 
 
     ProgressBar Pb_Estado;
