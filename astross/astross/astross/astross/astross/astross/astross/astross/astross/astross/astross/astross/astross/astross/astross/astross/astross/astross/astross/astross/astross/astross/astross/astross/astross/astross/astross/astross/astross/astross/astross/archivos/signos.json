@@ -1,0 +1,124 @@
+{
+  "signos": [
+    {
+      "elemento_es": "Fuego",
+      "descripcion_es": "Un Aries es una persona llena de energía y entusiasmo. Pionero y aventurero, le encantan los retos, la libertad y las nuevas ideas. A los Aries les gusta liderar y prefieren dar instrucciones a recibirlas. Son independientes y preocupados por su propia ambición y objetivos. Tienen una energía envidiable que a veces les lleva a ser agresivos, inquietos, argumentativos, tercos. Es fácil ofender a los Aries y, cuando se sienten ofendidos, es difícil hacer las paces con ellos.",
+      "virtudes_es": "Les gusta la aventura y los retos. A un Aries le gusta ganar y ser espontáneo. También le gusta dar su apoyo a una buena causa. Aventureros y energéticos, los aries son pioneros y valientes. Son listos, dinámicos, seguros de si y suelen demostrar entusiasmo hacia las cosas.",
+      "defectos_es": "No le gusta esperar. Los Aries no soportan fracasar o equivocarse, y no aceptan con buen agrado los consejos de los demás. Tampoco admiten los tiranos. Pueden ser egoístas y tener genio. Los Aries son impulsivos y a veces tienen poca paciencia. Tienden a tomar demasiados riesgos.",
+      "elemento_en": "Fire",
+      "descripcion_en": "An Aries is a person full of energy and enthusiasm. Pioneer and adventurer, he loves challenges, freedom and new ideas. The Aries like to lead and prefer to give instructions to receive them. They are independent and concerned about their own ambition and goals. They have an enviable energy that sometimes leads them to be aggressive, restless, argumentative, stubborn. It is easy to offend the Aries and, when they feel offended, it is difficult to make peace with them.",
+      "virtudes_en": "They like adventure and challenges. An Aries likes to win and be spontaneous. He also likes to give his support to a good cause. Adventurous and energetic, the Aries are pioneers and brave. They are smart, dynamic, confident and tend to show enthusiasm for things.",
+      "defectos_en": "He does not like to wait. The Aries can not bear to fail or be wrong, and do not accept with good pleasure the advice of others. Nor do tyrants admit. They can be selfish and have genius. The Aries are impulsive and sometimes have little patience. They tend to take too many risks."
+    },
+    {
+      "elemento_es": "Tierra",
+      "descripcion_es": "Tauro suele ser práctico, decidido y tener una gran fuerza de voluntad. Los tauro son personas estables y conservadores, y seguirán de forma leal un líder en el que tienen confianza. Les encanta la paz y tranquilidad y son muy respetuosos con las leyes y las reglas. Respetan los valores materiales y evitan las deudas. Son un poco reacios al cambio.",
+      "virtudes_es": "Paciente, persistente, decidido y fiable. A un tauro le encanta sentirse seguro. Tiene buen corazón y es muy cariñoso. A tauro le gusta la estabilidad, las cosas naturales, el placer y la comodidad. Los tauro disfrutan con tiempo para reflexionar y les encanta sentirse atraído hacía alguien.",
+      "defectos_es": "Celoso y posesivo, un tauro puede tender a ser inflexible y resentido. A veces los Tauro pecan de ser codiciosos y de permitírselo todo. A tauro no le gusta las interrupciones ni las prisas. Tampoco les gustan a los tauro las cosas falsas. No les gusta sentirse presionados y no soportan estar demasiado tiempo en casa.",
+      "elemento_en": "Earth",
+      "descripcion_en": "Taurus is usually practical, decisive and has great willpower. Taurus are stable and conservative people, and they will follow loyally a leader they trust. They love peace and tranquility and are very respectful of the laws and rules. They respect material values ​​and avoid debts. They are a bit reluctant to change.",
+      "virtudes_en": "Paciente, persistente, decidido y fiable. A un tauro le encanta sentirse seguro. Tiene buen corazón y es muy cariñoso. A tauro le gusta la estabilidad, las cosas naturales, el placer y la comodidad. Los tauro disfrutan con tiempo para reflexionar y les encanta sentirse atraído hacía alguien.",
+      "defectos_en": "Jealous and possessive, a taurus may tend to be inflexible and resentful. Sometimes the Taurus sin of being greedy and allowing it all. Taurus does not like interruptions or rushing. Nor do Taurus like false things. They do not like to feel pressured and can not stand being at home too long."
+    },
+    {
+      "elemento_es": "Aire",
+      "descripcion_es": "Géminis es el signo de los gemelos y como tal su carácter es doble y bastante complejo y contradictorio. Por un lado es versátil, pero por el otro puede ser insincero. Suelen tener elegancia y caer en los errores de los jóvenes. Tienen la felicidad, el egocentrismo, la imaginación y la inquietud e los niños. Los géminis empiezan nuevas actividades y retos con entusiasmo, pero muchas veces les falta la constancia para realizarlos. Consideran que la vida es como un juego y buscan la diversión y nuevas situaciones.",
+      "virtudes_es": "Adaptabilidad y versatilidad. Los Géminis son intelectuales, elocuentes, cariñosos, comunicativos e inteligentes. Tienen mucha energía y vitalidad. A géminis le gusta hablar, leer, hacer varias cosas a la vez. Disfrutan con las cosas diferentes y novedosas. Cuánto más variedad en su vida, mejor.",
+      "defectos_es": "Superficialidad e inconstancia. Los Géminis tienen tendencia a estar a veces nerviosos y tensos y pueden llegar a ser calculadores y exigentes. A géminis no le gusta la soledad. Sentirse atado a una situación o un sitio. No disfruta con el aprendizaje en el colegio, pero tampoco le gusta estar mentalmente inactivo.",
+      "elemento_en": "Air",
+      "descripcion_en": "Gemini is the sign of the twins and as such their character is double and quite complex and contradictory. On the one hand it is versatile, but on the other it can be insincere. They tend to have elegance and fall into the mistakes of young people. They have happiness, self-centeredness, imagination and restlessness in children. The Gemini start new activities and challenges with enthusiasm, but many times they lack the constancy to carry them out. They consider that life is like a game and they look for fun and new situations.",
+      "virtudes_en": "Adaptability and versatility. Gemini are intellectual, eloquent, affectionate, communicative and intelligent. They have a lot of energy and vitality. A Gemini likes to talk, read, do several things at once. They enjoy different and novel things. The more variety in your life, the better.",
+      "defectos_en": "Superficiality and inconstancy. Gemini tend to be nervous and tense at times and can become calculating and demanding. Gemini does not like loneliness. Feeling tied to a situation or a place. He does not enjoy learning at school, but he also does not like to be mentally inactive."
+    },
+    {
+      "elemento_es": "Agua",
+      "descripcion_es": "El carácter de un cáncer es el menos claro de todos los signos del zodiaco. Un cáncer puede ser desde tímido y aburrido hasta brillante y famoso. Los cáncer son conservadores y les encanta la seguridad y el calor de su hogar. De hecho para los hombres cáncer, su hogar es como un nido, un refugio donde ir cuando el estrés de su trabajo es demasiado. La casa de un Cáncer tiende a ser su refugio personal más que un escaparate para deslumbrar a los demás.",
+      "virtudes_es": "Cáncer es emocional y cariñoso, protector y simpático. Un Cáncer tiene mucha imaginación e intuición. Sabe ser cauteloso cuando hace falta. A cáncer le gusta su casa, el campo, los niños. Le gusta disfrutar con sus aficiones y le gustan las fiestas. A un cáncer también le gusta el romance.",
+      "defectos_es": "Cáncer tiene tendencia al mal humor, son calculadores, desordenados y auto compasivos. Cambia de estado de ánimo y es demasiado susceptible. Le cuesta dejar una situación. A un cáncer no le gusta el fracaso, los consejos o las situaciones conflictivas. No le gustan las personas que le lleven la contraria, ni que le digan qué tiene que hacer.",
+      "elemento_en": "Water",
+      "descripcion_en": "The character of a cancer is the least clear of all the signs of the zodiac. A cancer can be from shy and boring to bright and famous. Cancer is conservative and they love the security and warmth of their home. In fact for men cancer, their home is like a nest, a refuge to go to when the stress of their work is too much. The house of a Cancer tends to be your personal refuge rather than a showcase to dazzle others.",
+      "virtudes_en": "Cancer is emotional and affectionate, protective and friendly. A Cancer has a lot of imagination and intuition. You know to be cautious when needed. Cancer likes his house, the countryside, the children. He likes to enjoy his hobbies and he likes parties. A cancer also likes romance.",
+      "defectos_en": "Cancer has a tendency to bad mood, they are calculating, disorderly and self-compassionate. Changes his mood and is very susceptible. He struggles to leave a situation. A cancer does not like failure, advice or conflict situations. He does not like people who take the opposite, or to tell him what he has to do."
+    },
+    {
+      "elemento_es": "Fuego",
+      "descripcion_es": "Tienen ambición, fuerza, valentía, independencia y total seguridad en sus capacidades. No suelen tener dudas sobre qué hacer. Son líderes sin complicaciones - saben dónde quieren llegar y ponen todo su empeño, energía y creatividad en conseguir su objetivo. No temen los obstáculos - más bien crecen ante ellos.",
+      "virtudes_es": "Generoso y bondadoso, fiel y cariñoso. Un leo es creativo y entusiasta y comprensivo con los demás. A le gusta la aventura, el lujo y la comodidad. Un leo disfruta con los niños, el teatro y las fiestas. También le motiva el riesgo.",
+      "defectos_es": "Prepotente y mandón. Puede ser intolerante y dogmático. Tiende a interferir cuando no debe. A leo no le gusta lo vulgar y la vida cotidiana. Huye de las personas egoístas y mal pensadas y no le gusta la rutina o la seguridad.",
+      "elemento_en": "Fire",
+      "descripcion_en": "They have ambition, strength, courage, independence and total security in their abilities. They do not usually have doubts about what to do. They are leaders without complications - they know where they want to go and they put all their effort, energy and creativity into achieving their goal. They do not fear obstacles - rather they grow before them.",
+      "virtudes_en": "Generous and kind, faithful and affectionate. A leo is creative and enthusiastic and understanding with others. He likes adventure, luxury and comfort. A leo enjoys children, theater and parties. The risk motives him too.",
+      "defectos_en": "Overbearing and bossy. It can be intolerant and dogmatic. It tends to interfere when it should not. Leo does not like vulgar and everyday life. Escape from selfish and ill-conceived people and do not like routine or security."
+    },
+    {
+      "elemento_es": "Tierra",
+      "descripcion_es": "Virgo, el único signo representado por una mujer, es un signo caracterizado por su precisión, su convencionalidad, su actitud reservada y su afán, a veces hasta obsesión, con la limpieza. Los virgo suelen ser observadores, y pacientes. Pueden parecer a veces fríos, y de hecho les cuesta hacer grandes amigos.",
+      "virtudes_es": "Modestia, inteligencia y timidez. Los virgo suelen ser meticulosos, prácticos y trabajadores. Tienen gran capacidad analítica y son fiables. A virgo le gusta la vida sana, hacer listas, el orden y la higiene.",
+      "defectos_es": "Conservador y perfeccionista, un virgo tiende a preocuparse demasiado y su lado duro puede llevarle a ser excesivamente crítico y duro con los demás. A virgo no le gusta la suciedad, el desorden, el peligro, las personas vagas, la incertidumbre.",
+      "elemento_en": "Earth",
+      "descripcion_en": "Virgo, the only sign represented by a woman, is a sign characterized by its precision, its conventionality, its reserved attitude and its eagerness, sometimes even obsession, with cleanliness. Virgos are often observers and patients. They can sometimes seem cold, and in fact they have a hard time making great friends.",
+      "virtudes_en": "Modesty, intelligence and shyness. Virgo are usually meticulous, practical and hardworking. They have great analytical capacity and are reliable. Virgo likes healthy living, making lists, order and hygiene.",
+      "defectos_en": "Conservative and perfectionist, a Virgo tends to worry too much and his hard side can lead him to be overly critical and hard on others. Virgo does not like dirt, disorder, danger, vague people, uncertainty."
+    },
+    {
+      "elemento_es": "Aire",
+      "descripcion_es": "Los libra se encuentran entre los signos más civilizados del zodiaco. Tienen encanto, elegancia y buen gusto, y son amables y pacíficos. Les gusta la belleza y la armonía y son capaces de ser imparciales ante conflictos. No obstante, una vez que han llegado a una opinión sobre algo, no les gusta que se les contradiga. Les gusta contar con el apoyo de los demás.",
+      "virtudes_es": "Diplomático, encantador y sociable. Los libra son idealistas, pacíficos, optimistas y románticos. Tienen un carácter afable y equilibrado.",
+      "defectos_es": "Son indecisos y fácilmente influidos por terceros. Pueden cambiar de opinión fácilmente y ser demasiado complacientes.",
+      "elemento_en": "Air",
+      "descripcion_en": "Libra are among the most civilized signs of the zodiac. They have charm, elegance and good taste, and are friendly and peaceful. They like beauty and harmony and are able to be impartial in conflicts. However, once they have reached an opinion about something, they do not like to be contradicted. They like to have the support of others.",
+      "virtudes_en": "Diplomatic, charming and sociable. Libra are idealists, pacifists, optimists and romantics. They have a gentle and balanced character.",
+      "defectos_en": "They are undecided and easily influenced by third parties. They can change their opinion easily and be too complacent."
+    },
+    {
+      "elemento_es": "Agua",
+      "descripcion_es": "Escorpio es un signo intenso con una energía emocional única en todo el zodiaco. Aunque puedan parecer tranquilos, los Escorpio tienen un magnetismo interno escondido dentro. Son afables, buenos tertulianos, reservados y cortés, pero aunque parezcan estar algo retirados del centro de actividad, en realidad están observando todo con su ojo crítico.",
+      "virtudes_es": "Emocional, decidido, poderoso y apasionado. El Escorpio es un signo con mucho magnetismo. A escorpio le gusta la verdad, el trabajo cuando tiene sentido, involucrarse en causas y convencer a los demás.",
+      "defectos_es": "Celoso, compulsivo y obsesivo. Los escorpio pueden ser resentidos y tercos. A escorpio no le gusta lo superficial, relaciones sin sentido. No acepta con buen agrado los halagos fáciles y tampoco soporta que la gente le tome el pelo.",
+      "elemento_en": "Water",
+      "descripcion_en": "Scorpio is an intense sign with a unique emotional energy throughout the zodiac. Although they may seem calm, the Scorpios have an internal magnetism hidden inside. They are affable, good tertulianos, reserved and polite, but although they seem to be something withdrawn from the activity center, in fact they are observing everything with their critical eye.",
+      "virtudes_en": "Emotional, determined, powerful and passionate. Scorpio is a sign with a lot of magnetism. Scorpio likes the truth, work when it makes sense, get involved in causes and convince others.",
+      "defectos_en": "Jealous, compulsive and obsessive. The scorpions can be resentful and stubborn. A Scorpio does not like the superficial, meaningless relationships. He does not accept easy compliments and does not support people teasing him."
+    },
+    {
+      "elemento_es": "Fuego",
+      "descripcion_es": "Sagitario es uno de los signos más positivos del zodiaco. Son versátiles y les encanta la aventura y lo desconocido. Tienen la mente abierta a nuevas ideas y experiencias y mantienen un actitud optimista incluso cuando las cosas se les ponen difíciles. Son fiables, honestas, buenos y sinceros y dispuestas a luchar por buenas causas cueste lo que cueste.",
+      "virtudes_es": "Intelectual, honesto, sincero y simpático. A los sagitario les caracteriza el optimismo, su modestia y su buen humor.A saitario le gusta la libertad, viajar, la aventura y la capacidad de comprender.",
+      "defectos_es": "Son tan optimistas a veces que llegan a ser irresponsables. Superficial, descuidado e inquieto. A sagitario no le gusta sentirse atado a una situación, tener que preocuparse por los detalles.",
+      "elemento_en": "Fire",
+      "descripcion_en": "Sagittarius is one of the most positive signs of the zodiac. They are versatile and love adventure and the unknown. They have an open mind to new ideas and experiences and maintain an optimistic attitude even when things get difficult. They are reliable, honest, good and sincere and willing to fight for good causes at all costs.",
+      "virtudes_en": "Intellectual, honest, sincere and friendly. Sagittarians are characterized by optimism, modesty and good humor. Saita likes freedom, travel, adventure and the ability to understand.",
+      "defectos_en": "They are so optimistic at times that they become irresponsible. Superficial, careless and restless. Sagittarius does not like being tied to a situation, having to worry about the details."
+    },
+    {
+      "elemento_es": "Tierra",
+      "descripcion_es": "Capricornio es uno de los signos del zodiaco más estables, seguros y tranquilos. Son trabajadores, responsables y prácticos y dispuestos a persistir hasta sea necesario para conseguir su objetivo. Son fiables y muchas veces tienen el papel de terminar un proyecto iniciado por uno de los signos más pioneros. Les encanta la música.",
+      "virtudes_es": "Los capricornio son ambiciosos, disciplinados, prácticos, prudentes, y paciencientes. Tienen un buen sentido de humor y son reservados. A capricornio le gusta la fiabilidad, el profesionalismo, una base sólida, tener un objetivo, el liderazgo.",
+      "defectos_es": "Capricornio tiende a ser pesimista y, ante las situaciones difíciles, hasta fatalista. A veces le cuesta ser generoso con los demás y le cuesta hacer favores de forma altruista. A capricornio no le gustan los planes poco prácticos, fantasear, lo ridículo, ni las personas frívolas.",
+      "elemento_en": "Earth",
+      "descripcion_en": "Capricorn is one of the most stable, safe and calm signs of the zodiac. They are workers, responsible and practical and willing to persist until necessary to achieve their objective. They are reliable and often have the role of finishing a project initiated by one of the most pioneering signs. They love music.",
+      "virtudes_en": "Capricorn are ambitious, disciplined, practical, prudent, and patient. They have a good sense of humor and are reserved. A Capricorn likes reliability, professionalism, a solid foundation, having a goal, leadership.",
+      "defectos_en": "Capricorn tends to be pessimistic and, in difficult situations, even fatalistic. Sometimes it costs him to be generous with others and it costs him to do favors altruistically. A Capricorn does not like impractical plans, fantasize, ridiculous, or frivolous people."
+    },
+    {
+      "elemento_es": "Aire",
+      "descripcion_es": "Los acuarios tienen una personalidad fuerte y atractiva. Hay dos tipos de acuarios: uno es tímido, sensible, y paciente. El otro tipo de acuario es exuberante, vivo y puede llegar a esconder las profundidades de su personalidad debajo de un aire frívolo. Ambos tipos de acuario tienen una fuerza de convicción y de la verdad muy fuerte y son tan honestos que saben cambiar sus opiniones si aparecen pruebas que muestran lo contrario de lo que pensaban antes.",
+      "virtudes_es": "A los acuario les gusta luchar por causas buenas, soñar y planificar un futuro feliz, aprender del pasado, son buenos amigos y les gusta divertirse. Los acuario son simpáticos y humanitarios. Son honestos, leales, originales y brillantes. Un acuario es independiente e intelectual.",
+      "defectos_es": "A un acuario no le gusta las promesas al aire, ni sentirse solo. Un acuario es impredecible y tiende a llevar la contraria. Es poco emocional y no comprende la complejidad emocional de algunas personas y tampoco la traición entre amigos.",
+      "elemento_en": "Air",
+      "descripcion_en": "Aquariums have a strong and attractive personality. There are two types of aquariums: one is shy, sensitive, and patient. The other type of aquarium is exuberant, alive and can hide the depths of its personality under a frivolous air. Both types of aquariums have a very strong conviction and truth and they are so honest that they know how to change their opinions if there is evidence that shows the opposite of what they thought before.",
+      "virtudes_en": "Aquarians like to fight for good causes, dream and plan a happy future, learn from the past, they are good friends and they like to have fun. The aquariums are nice and humane. They are honest, loyal, original and brilliant. An aquarium is independent and intellectual.",
+      "defectos_en": "An aquarium does not like promises to the air, nor to feel alone. An aquarium is unpredictable and tends to be contrary. It is not emotional and does not understand the emotional complexity of some people and not the betrayal between friends."
+    },
+    {
+      "elemento_es": "Agua",
+      "descripcion_es": "Los piscis tienen una personalidad tranquila, paciente y amable. Son sensibles a los sentimientos de los demás y responden con simpatía y tacto al sufrimiento de los demás. Son muy queridos por los demás porque tienen un carácter afable, cariñoso y amable, y no suponen una amenaza para los que quieren tener puestos de autoridad o mayor popularidad.",
+      "virtudes_es": "Imaginativo y sensible. Es amable y tiene compasión hacia los demás. Es intuitivo y piensa en los demás. A piscis le gusta estar solo para soñar. Le gusta el misterio y el ridículo. Le gusta perderse.",
+      "defectos_es": "No asume la realidad. Es idealista, mantiene secretos y tiene una voluntad algo débil. Se deja llevar por los demás. A piscis no le gusta lo obvio, tampoco les gusta ser criticados ni las personas pedantes o creídas.",
+      "elemento_en": "Water",
+      "descripcion_en": "Pisces have a quiet personality, patient and kind. They are sensitive to the feelings of others and respond with sympathy and tact to the suffering of others. They are very dear to others because they have an affable, affectionate and kind character, and do not pose a threat to those who want positions of authority or greater popularity.",
+      "virtudes_en": "Imaginative and sensitive. He is friendly and has compassion for others. It\\'s intuitive and think of others. Pisces likes to be alone to dream. He likes the mystery and the absurd. He likes to get lost.",
+      "defectos_en": "It does not assume reality. It is idealistic, keeps secrets and has a somewhat weak will. It is carried away by others. Pisces does not like the obvious, nor do they like to be criticized, nor do people like to be pedantic or believe."
+    }
+  ]
+}

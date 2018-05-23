@@ -59,13 +59,15 @@ public class PnlActivity extends AppCompatActivity {
                 JSONObject datos_horoscopo = horoscopo.getJSONObject(id-1);
                 String numeros = datos_horoscopo.getString("pnl").toString();
                 String[] textos = numeros.split(";");
-                int i=1;
-                if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){
-                    i = 0;
-                }
 
-                for(int j=i; j<textos.length;j+=2){
-                    Txt_frase1.setText(textos[j]);
+                if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){
+                    Txt_frase1.setText(textos[0]);
+                    Txt_frase2.setText(textos[2]);
+                    Txt_frase3.setText(textos[4]);
+                }else{
+                    Txt_frase1.setText(textos[1]);
+                    Txt_frase2.setText(textos[3]);
+                    Txt_frase3.setText(textos[5]);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
