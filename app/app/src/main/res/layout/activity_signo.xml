@@ -70,7 +70,6 @@
                         android:id="@+id/Txt_Elemento_Signo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/aries_elemento"
                         style="@style/texto1"/>
                 </LinearLayout>
                 <LinearLayout
@@ -88,7 +87,6 @@
                         android:id="@+id/Txt_Descripcion_Signo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/aries_descripcion"
                         style="@style/texto1"/>
                 </LinearLayout>
                 <LinearLayout
@@ -106,7 +104,6 @@
                         android:id="@+id/Txt_Virtudes_Signo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/aries_cualidades"
                         style="@style/texto1"/>
                 </LinearLayout>
                 <LinearLayout
@@ -124,7 +121,6 @@
                         android:id="@+id/Txt_Defectos_Signo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/aries_defectos"
                         style="@style/texto1"/>
                 </LinearLayout>
             </LinearLayout>

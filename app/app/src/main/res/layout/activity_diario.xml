@@ -71,7 +71,6 @@
                         android:id="@+id/Txt_Diario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/aries_diario"
                         style="@style/texto1"/>
                 </LinearLayout>
             </LinearLayout>
