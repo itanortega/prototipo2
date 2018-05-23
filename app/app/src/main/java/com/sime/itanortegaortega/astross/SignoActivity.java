@@ -6,11 +6,16 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class SignoActivity extends AppCompatActivity {
     private static String LOCAL = "";
@@ -76,9 +81,37 @@ public class SignoActivity extends AppCompatActivity {
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
         ImgBanner.setImageBitmap(Utilidades.get_imagen_signo(this, id, LOCAL));
 
-        /*Txt_Elemento_Signo.setText(Utilidades.get_elemento(this, id));
-        Txt_Descripcion_Signo.setText(Utilidades.get_descripcion(this, id));
-        Txt_Virtudes_Signo.setText(Utilidades.get_virtudes(this, id));
-        Txt_Defectos_Signo.setText(Utilidades.get_defectos(this, id));*/
+        CAFData data = CAFData.dataWithContentsOfFile(LOCAL + "/signos.json");
+        if(data != null){
+            try {
+                JSONObject signoroot = new JSONObject(data.toText());
+                JSONArray signo = signoroot.getJSONArray("signos");
+                JSONObject datos_signo = signo.getJSONObject(id-1);
+
+                String elemento;
+                String descripcion;
+                String virtudes;
+                String defectos;
+
+                if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){
+                    elemento = datos_signo.getString("elemento_en").toString();
+                    descripcion = datos_signo.getString("descripcion_en").toString();
+                    virtudes = datos_signo.getString("virtudes_en").toString();
+                    defectos = datos_signo.getString("defectos_en").toString();
+                }else{
+                    elemento = datos_signo.getString("elemento_es").toString();
+                    descripcion = datos_signo.getString("descripcion_es").toString();
+                    virtudes = datos_signo.getString("virtudes_es").toString();
+                    defectos = datos_signo.getString("defectos_es").toString();
+                }
+
+                Txt_Elemento_Signo.setText(elemento);
+                Txt_Descripcion_Signo.setText(descripcion);
+                Txt_Virtudes_Signo.setText(virtudes);
+                Txt_Defectos_Signo.setText(defectos);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
