@@ -8,6 +8,10 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.Calendar;
 
 public class DiarioActivity extends AppCompatActivity {
@@ -54,7 +58,26 @@ public class DiarioActivity extends AppCompatActivity {
         String annio = Integer.toString(c.get(Calendar.YEAR));
 
         Txt_FechaHoy.setText(getResources().getString(R.string.horoscopodel) + " " + dia + " " + getResources().getString(R.string.de) + " " + Utilidades.get_mes(this, Integer.parseInt(mes)) + " " + getResources().getString(R.string.del) + " " + annio);
-        Txt_Diario.setText(Utilidades.get_diario(this, id));
+
+        CAFData data = CAFData.dataWithContentsOfFile(LOCAL + "/horoscopo.json");
+        if(data != null){
+            try {
+                JSONObject horoscoporoot = new JSONObject(data.toText());
+                JSONArray horoscopo = horoscoporoot.getJSONArray("horoscopo");
+                JSONObject datos_horoscopo = horoscopo.getJSONObject(id-1);
+
+                String diario;
+                if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){
+                    diario = datos_horoscopo.getString(Utilidades.get_prefijo(id) + "_en").toString();
+                }else{
+                    diario = datos_horoscopo.getString(Utilidades.get_prefijo(id) + "_es").toString();
+                }
+
+                Txt_Diario.setText(diario);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void showToolbar(String title, boolean upButton){

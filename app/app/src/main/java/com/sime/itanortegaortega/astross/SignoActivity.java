@@ -76,9 +76,9 @@ public class SignoActivity extends AppCompatActivity {
         Txt_Fechas_B.setText(Utilidades.get_fecha_signo(this, id));
         ImgBanner.setImageBitmap(Utilidades.get_imagen_signo(this, id, LOCAL));
 
-        Txt_Elemento_Signo.setText(Utilidades.get_elemento(this, id));
+        /*Txt_Elemento_Signo.setText(Utilidades.get_elemento(this, id));
         Txt_Descripcion_Signo.setText(Utilidades.get_descripcion(this, id));
         Txt_Virtudes_Signo.setText(Utilidades.get_virtudes(this, id));
-        Txt_Defectos_Signo.setText(Utilidades.get_defectos(this, id));
+        Txt_Defectos_Signo.setText(Utilidades.get_defectos(this, id));*/
     }
 }

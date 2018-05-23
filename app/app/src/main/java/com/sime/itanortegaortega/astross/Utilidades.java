@@ -347,241 +347,6 @@ public class Utilidades {
         return respuesta;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public static String get_elemento(Activity act, int id) {
-        String res = "";
-        switch (id){
-            case 1:
-                res =  act.getResources().getString(R.string.aries_elemento);
-                break;
-
-            case 2:
-                res = act.getResources().getString(R.string.tauro_elemento);
-                break;
-
-            case 3:
-                res = act.getResources().getString(R.string.geminis_elemento);
-                break;
-
-            case 4:
-                res = act.getResources().getString(R.string.cancer_elemento);
-                break;
-
-            case 5:
-                res = act.getResources().getString(R.string.leo_elemento);
-                break;
-
-            case 6:
-                res = act.getResources().getString(R.string.virgo_elemento);
-                break;
-
-            case 7:
-                res = act.getResources().getString(R.string.libra_elemento);
-                break;
-
-            case 8:
-                res = act.getResources().getString(R.string.escorpio_elemento);
-                break;
-
-            case 9:
-                res = act.getResources().getString(R.string.sagitario_elemento);
-                break;
-
-            case 10:
-                res = act.getResources().getString(R.string.capricornio_elemento);
-                break;
-
-            case 11:
-                res = act.getResources().getString(R.string.acuario_elemento);
-                break;
-
-            case 12:
-                res = act.getResources().getString(R.string.piscis_elemento);
-                break;
-        }
-        return res;
-    }
-
-    public static String get_descripcion(Activity act, int id) {
-        String res = "";
-        switch (id){
-            case 1:
-                res =  act.getResources().getString(R.string.aries_descripcion);
-                break;
-
-            case 2:
-                res = act.getResources().getString(R.string.tauro_descripcion);
-                break;
-
-            case 3:
-                res = act.getResources().getString(R.string.geminis_descripcion);
-                break;
-
-            case 4:
-                res = act.getResources().getString(R.string.cancer_descripcion);
-                break;
-
-            case 5:
-                res = act.getResources().getString(R.string.leo_descripcion);
-                break;
-
-            case 6:
-                res = act.getResources().getString(R.string.virgo_descripcion);
-                break;
-
-            case 7:
-                res = act.getResources().getString(R.string.libra_descripcion);
-                break;
-
-            case 8:
-                res = act.getResources().getString(R.string.escorpio_descripcion);
-                break;
-
-            case 9:
-                res = act.getResources().getString(R.string.sagitario_descripcion);
-                break;
-
-            case 10:
-                res = act.getResources().getString(R.string.capricornio_descripcion);
-                break;
-
-            case 11:
-                res = act.getResources().getString(R.string.acuario_descripcion);
-                break;
-
-            case 12:
-                res = act.getResources().getString(R.string.piscis_descripcion);
-                break;
-        }
-        return res;
-    }
-
-    public static String get_virtudes(Activity act, int id) {
-        String res = "";
-        switch (id){
-            case 1:
-                res =  act.getResources().getString(R.string.aries_cualidades);
-                break;
-
-            case 2:
-                res = act.getResources().getString(R.string.tauro_cualidades);
-                break;
-
-            case 3:
-                res = act.getResources().getString(R.string.geminis_cualidades);
-                break;
-
-            case 4:
-                res = act.getResources().getString(R.string.cancer_cualidades);
-                break;
-
-            case 5:
-                res = act.getResources().getString(R.string.leo_cualidades);
-                break;
-
-            case 6:
-                res = act.getResources().getString(R.string.virgo_cualidades);
-                break;
-
-            case 7:
-                res = act.getResources().getString(R.string.libra_cualidades);
-                break;
-
-            case 8:
-                res = act.getResources().getString(R.string.escorpio_cualidades);
-                break;
-
-            case 9:
-                res = act.getResources().getString(R.string.sagitario_cualidades);
-                break;
-
-            case 10:
-                res = act.getResources().getString(R.string.capricornio_cualidades);
-                break;
-
-            case 11:
-                res = act.getResources().getString(R.string.acuario_cualidades);
-                break;
-
-            case 12:
-                res = act.getResources().getString(R.string.piscis_cualidades);
-                break;
-        }
-        return res;
-    }
-
-    public static String get_defectos(Activity act, int id) {
-        String res = "";
-        switch (id){
-            case 1:
-                res =  act.getResources().getString(R.string.aries_defectos);
-                break;
-
-            case 2:
-                res = act.getResources().getString(R.string.tauro_defectos);
-                break;
-
-            case 3:
-                res = act.getResources().getString(R.string.geminis_defectos);
-                break;
-
-            case 4:
-                res = act.getResources().getString(R.string.cancer_defectos);
-                break;
-
-            case 5:
-                res = act.getResources().getString(R.string.leo_defectos);
-                break;
-
-            case 6:
-                res = act.getResources().getString(R.string.virgo_defectos);
-                break;
-
-            case 7:
-                res = act.getResources().getString(R.string.libra_defectos);
-                break;
-
-            case 8:
-                res = act.getResources().getString(R.string.escorpio_defectos);
-                break;
-
-            case 9:
-                res = act.getResources().getString(R.string.sagitario_defectos);
-                break;
-
-            case 10:
-                res = act.getResources().getString(R.string.capricornio_defectos);
-                break;
-
-            case 11:
-                res = act.getResources().getString(R.string.acuario_defectos);
-                break;
-
-            case 12:
-                res = act.getResources().getString(R.string.piscis_defectos);
-                break;
-        }
-        return res;
-    }
-
     public static String get_mes(Activity act, int id) {
         String res = "";
         switch (id){
@@ -636,163 +401,44 @@ public class Utilidades {
         return res;
     }
 
-    public static String get_diario(Activity act, int id) {
+    public static String get_prefijo(int id){
         String res = "";
         switch (id){
             case 1:
-                res =  act.getResources().getString(R.string.aries_diario);
+                res = "aries";
                 break;
-
             case 2:
-                res = act.getResources().getString(R.string.tauro_diario);
+                res = "tauro";
                 break;
-
             case 3:
-                res = act.getResources().getString(R.string.geminis_diario);
+                res = "geminis";
                 break;
-
             case 4:
-                res = act.getResources().getString(R.string.cancer_diario);
+                res = "cancer";
                 break;
-
             case 5:
-                res = act.getResources().getString(R.string.leo_diario);
+                res = "leo";
                 break;
-
             case 6:
-                res = act.getResources().getString(R.string.virgo_diario);
+                res = "virgo";
                 break;
-
             case 7:
-                res = act.getResources().getString(R.string.libra_diario);
+                res = "libra";
                 break;
-
             case 8:
-                res = act.getResources().getString(R.string.escorpio_diario);
+                res = "escorpio";
                 break;
-
             case 9:
-                res = act.getResources().getString(R.string.sagitario_diario);
+                res = "sagitario";
                 break;
-
             case 10:
-                res = act.getResources().getString(R.string.capricornio_diario);
+                res = "capricornio";
                 break;
-
             case 11:
-                res = act.getResources().getString(R.string.acuario_diario);
+                res = "acuario";
                 break;
-
             case 12:
-                res = act.getResources().getString(R.string.piscis_diario);
-                break;
-        }
-        return res;
-    }
-
-    public static String get_semana(Activity act, int id) {
-        String res = "";
-        switch (id){
-            case 1:
-                res =  act.getResources().getString(R.string.aries_semana);
-                break;
-
-            case 2:
-                res = act.getResources().getString(R.string.tauro_semana);
-                break;
-
-            case 3:
-                res = act.getResources().getString(R.string.geminis_semana);
-                break;
-
-            case 4:
-                res = act.getResources().getString(R.string.cancer_semana);
-                break;
-
-            case 5:
-                res = act.getResources().getString(R.string.leo_semana);
-                break;
-
-            case 6:
-                res = act.getResources().getString(R.string.virgo_semana);
-                break;
-
-            case 7:
-                res = act.getResources().getString(R.string.libra_semana);
-                break;
-
-            case 8:
-                res = act.getResources().getString(R.string.escorpio_semana);
-                break;
-
-            case 9:
-                res = act.getResources().getString(R.string.sagitario_semana);
-                break;
-
-            case 10:
-                res = act.getResources().getString(R.string.capricornio_semana);
-                break;
-
-            case 11:
-                res = act.getResources().getString(R.string.acuario_semana);
-                break;
-
-            case 12:
-                res = act.getResources().getString(R.string.piscis_semana);
-                break;
-        }
-        return res;
-    }
-
-    public static String getPNL(Activity act, int id) {
-        String res = "";
-        switch (id){
-            case 1:
-                res =  act.getResources().getString(R.string.pnl1);
-                break;
-
-            case 2:
-                res = act.getResources().getString(R.string.pnl2);
-                break;
-
-            case 3:
-                res = act.getResources().getString(R.string.pnl3);
-                break;
-
-            case 4:
-                res = act.getResources().getString(R.string.pnl4);
-                break;
-
-            case 5:
-                res = act.getResources().getString(R.string.pnl5);
-                break;
-
-            case 6:
-                res = act.getResources().getString(R.string.pnl6);
-                break;
-
-            case 7:
-                res = act.getResources().getString(R.string.pnl7);
-                break;
-
-            case 8:
-                res = act.getResources().getString(R.string.pnl8);
-                break;
-
-            case 9:
-                res = act.getResources().getString(R.string.pnl9);
-                break;
-
-            case 10:
-                res = act.getResources().getString(R.string.pnl10);
-                break;
-
-            case 11:
-                res = act.getResources().getString(R.string.pnl11);
-                break;
-
-            case 12:
-                res = act.getResources().getString(R.string.pnl12);
+                res = "piscis";
                 break;
         }
         return res;

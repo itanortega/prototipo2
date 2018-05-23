@@ -162,8 +162,8 @@ public class CompatibilidadActivity extends AppCompatActivity {
             try {
                 JSONObject compatibilidadroot = new JSONObject(data.toText());
 
-                String signo1=String.valueOf(id);
-                String signo2=String.valueOf(idc);
+                String signo1=Utilidades.get_prefijo(id);
+                String signo2=Utilidades.get_prefijo(idc);
                 String compatibilidad = compatibilidadroot.getString(signo1 + "_" + signo2).toString();
 
                 Txt_Signo1.setText(Utilidades.get_nombre_signo(this, id) + " " + getResources().getString(R.string.es));
