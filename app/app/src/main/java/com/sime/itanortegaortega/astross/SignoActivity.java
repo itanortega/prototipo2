@@ -3,6 +3,8 @@ package com.sime.itanortegaortega.astross;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -55,6 +57,19 @@ public class SignoActivity extends AppCompatActivity {
         Txt_Defectos_Signo = (TextView) this.findViewById(R.id.Txt_Defectos_Signo);
 
         cambiarDatos();
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu (Menu menu) {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+        if (networkInfo == null){
+            menu.getItem(0).setEnabled(false);
+            menu.getItem(2).setEnabled(false);
+            menu.getItem(4).setEnabled(false);
+        }
+        return true;
     }
 
     public void showToolbar(String title, boolean upButton){
