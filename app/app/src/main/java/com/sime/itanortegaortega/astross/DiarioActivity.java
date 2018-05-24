@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -64,7 +65,7 @@ public class DiarioActivity extends AppCompatActivity {
             try {
                 JSONObject horoscoporoot = new JSONObject(data.toText());
                 JSONArray horoscopo = horoscoporoot.getJSONArray("horoscopo");
-                JSONObject datos_horoscopo = horoscopo.getJSONObject(id-1);
+                JSONObject datos_horoscopo = horoscopo.getJSONObject(id-1); Log.d("debugapp", datos_horoscopo.toString());
 
                 String diario;
                 if(this.getResources().getString(R.string.prefijo_idioma).equals("en")){
