@@ -5,6 +5,9 @@
     },
     {
       "archivo": "signos.json"
+    },
+    {
+      "archivo": "iniciales.json"
     }
   ],
   "imágenes": [
