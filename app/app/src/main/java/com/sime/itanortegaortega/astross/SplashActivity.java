@@ -42,7 +42,7 @@ public class SplashActivity extends AppCompatActivity {
 
         LOCAL = getApplicationContext().getFilesDir().getAbsolutePath() + "/";
 
-        File file = new File(LOCAL + "iniciales.json"); file.delete();
+        //File file = new File(LOCAL + "iniciales.json"); file.delete();
 
         ExisteArchivosIniciales existeArchivoVersion = new ExisteArchivosIniciales();
         existeArchivoVersion.execute();
@@ -70,7 +70,7 @@ public class SplashActivity extends AppCompatActivity {
                 existe = true;
                 for(int i=1; i<=80; i++){
                     try {
-                        Thread.sleep(30);
+                        Thread.sleep(10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -93,23 +93,8 @@ public class SplashActivity extends AppCompatActivity {
             super.onPostExecute(existe);
 
             if(existe){
-                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
-                NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
-
-                if (networkInfo != null){
-                    DescargarArchivosHoy descargarArchivosHoy = new DescargarArchivosHoy();
-                    descargarArchivosHoy.execute();
-                }else {
-                    Handler handler =  new Handler(getBaseContext().getMainLooper());
-                    handler.post( new Runnable(){
-                        public void run(){
-                            Toast.makeText(getBaseContext(), "Es necesario conectarse a internet cuando se abre la aplicación por primera vez.", Toast.LENGTH_LONG).show();
-                        }
-                    });
-
-                    Intent salida=new Intent( Intent.ACTION_MAIN);
-                    finish();
-                }
+                DescargarArchivosHoy descargarArchivosHoy = new DescargarArchivosHoy();
+                descargarArchivosHoy.execute();
             }else{
                 ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
                 NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -141,8 +126,9 @@ public class SplashActivity extends AppCompatActivity {
 
         @Override
         protected Boolean doInBackground(Void... voids) {
+            Log.d("debugapp", "descarga de archivos base");
             try {
-                Thread.sleep(2000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -198,6 +184,7 @@ public class SplashActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
+                    Log.d("debugapp", "archivos");
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -218,29 +205,14 @@ public class SplashActivity extends AppCompatActivity {
             super.onPostExecute(aBoolean);
 
             try {
-                Thread.sleep(500);
+                Thread.sleep(50);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
-            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
-            if (networkInfo != null){
-                DescargarArchivosHoy descargarArchivosHoy = new DescargarArchivosHoy();
-                descargarArchivosHoy.execute();
-            }else {
-                Handler handler =  new Handler(getBaseContext().getMainLooper());
-                handler.post( new Runnable(){
-                    public void run(){
-                        Toast.makeText(getBaseContext(), "Es necesario conectarse a internet cuando se abre la aplicación por primera vez.", Toast.LENGTH_LONG).show();
-                    }
-                });
-
-                Intent salida=new Intent( Intent.ACTION_MAIN);
-                finish();
-            }
-
+            DescargarArchivosHoy descargarArchivosHoy = new DescargarArchivosHoy();
+            descargarArchivosHoy.execute();
         }
     }
 
@@ -255,37 +227,49 @@ public class SplashActivity extends AppCompatActivity {
 
         @Override
         protected Boolean doInBackground(Void... voids) {
-            ArrayList<String> imagenes = new ArrayList<String>();
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(getBaseContext().CONNECTIVITY_SERVICE);
+            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
-            URL urlHoy = null;
-            try {
-                urlHoy = new URL(urlhoy);
+            if (networkInfo != null){ Log.d("debugapp","existe conexión");
+                ArrayList<String> imagenes = new ArrayList<String>();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
+                URL urlHoy = null;
+                try {
+                    urlHoy = new URL(urlhoy);
 
-            CAFData ultimaActualizacionData;
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
 
-            if(urlHoy != null) {
-                boolean estadoEscritura = Utilidades.escribirArchivo(HOY, LOCAL + "fecha.dat");
-            }else{
-                CAFData fechalocal = CAFData.dataWithContentsOfFile(LOCAL + "fecha.dat");
+                CAFData ultimaActualizacionData;
 
-                if(!fechalocal.toText().toString().equals(HOY)){
-                    try {
-                        CAFData horoscopoDiarioData = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "api.php?get=" + HOY));
-                        horoscopoDiarioData.writeToFile(LOCAL + "horoscopo.json", true);
-                        boolean estadoEscritura = Utilidades.escribirArchivo(HOY, LOCAL + "fecha.dat");
-                    } catch (MalformedURLException e) {
-                        e.printStackTrace();
+                if(urlHoy != null) {
+                    boolean estadoEscritura = Utilidades.escribirArchivo(HOY, LOCAL + "fecha.dat");
+                }else{
+                    CAFData fechalocal = CAFData.dataWithContentsOfFile(LOCAL + "fecha.dat");
+
+                    if(!fechalocal.toText().toString().equals(HOY)){
+                        try {
+                            CAFData horoscopoDiarioData = CAFData.dataWithContentsOfURL(new URL(DOMAIN + "api.php?get=" + HOY));
+                            horoscopoDiarioData.writeToFile(LOCAL + "horoscopo.json", true);
+                            boolean estadoEscritura = Utilidades.escribirArchivo(HOY, LOCAL + "fecha.dat");
+                        } catch (MalformedURLException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
+            }else {  Log.d("debugapp","no hay conexión");
+                Handler handler =  new Handler(getBaseContext().getMainLooper());
+                handler.post( new Runnable(){
+                    public void run(){
+                        Toast.makeText(getBaseContext(), "Es necesario conectarse a internet algunas opciones no estarán disponibles.", Toast.LENGTH_LONG).show();
+                    }
+                });
             }
 
             publishProgress(100);
